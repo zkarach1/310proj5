@@ -1,0 +1,272 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 6 12
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	6200 3150 7000 3150
+Wire Wire Line
+	6200 3350 7000 3350
+Wire Wire Line
+	6200 3550 7000 3550
+Wire Wire Line
+	6200 3650 6600 3650
+NoConn ~ 6600 3650
+Wire Wire Line
+	4800 3650 4400 3650
+NoConn ~ 4400 3650
+NoConn ~ 4400 4150
+Wire Wire Line
+	6200 4150 7300 4150
+Wire Wire Line
+	7300 4150 7300 4100
+Wire Wire Line
+	6200 3950 7100 3950
+Wire Wire Line
+	7100 3950 7100 3800
+Wire Wire Line
+	7100 3800 7300 3800
+$Comp
+L pspice:DIODE D?
+U 1 1 5ED035C4
+P 4600 1900
+F 0 "D?" H 4600 2165 50  0000 C CNN
+F 1 "DIODE" H 4600 2074 50  0000 C CNN
+F 2 "" H 4600 1900 50  0001 C CNN
+F 3 "~" H 4600 1900 50  0001 C CNN
+	1    4600 1900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4800 2950 3950 2950
+Wire Wire Line
+	3950 2950 3950 1600
+Wire Wire Line
+	3950 1600 4600 1600
+Wire Wire Line
+	4600 1600 4600 1700
+Connection ~ 4600 1600
+Wire Wire Line
+	4600 1600 5950 1600
+Wire Wire Line
+	4600 2100 5950 2100
+Wire Wire Line
+	5950 1800 5950 1600
+Connection ~ 5950 1600
+Wire Wire Line
+	5950 1600 7100 1600
+Wire Wire Line
+	5950 2100 5950 2300
+$Comp
+L power:VCC #PWR?
+U 1 1 5ED0C2DC
+P 5950 2300
+F 0 "#PWR?" H 5950 2150 50  0001 C CNN
+F 1 "VCC" H 5968 2473 50  0000 C CNN
+F 2 "" H 5950 2300 50  0001 C CNN
+F 3 "" H 5950 2300 50  0001 C CNN
+	1    5950 2300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5950 1600 5950 1400
+Wire Wire Line
+	7100 1600 7100 1750
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5ED12265
+P 7300 1750
+F 0 "SW?" H 7300 2035 50  0000 C CNN
+F 1 "SW_Push" H 7300 1944 50  0000 C CNN
+F 2 "" H 7300 1950 50  0001 C CNN
+F 3 "~" H 7300 1950 50  0001 C CNN
+	1    7300 1750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4800 4150 4400 4150
+Wire Wire Line
+	4800 3150 3400 3150
+Wire Wire Line
+	4800 3250 3400 3250
+Wire Wire Line
+	4800 3350 3400 3350
+Wire Wire Line
+	4800 3450 3400 3450
+Wire Wire Line
+	4800 3750 3400 3750
+Wire Wire Line
+	4800 3950 3400 3950
+Wire Wire Line
+	3400 4100 3400 3950
+Connection ~ 3400 3150
+Wire Wire Line
+	3400 3150 3400 1100
+Connection ~ 3400 3250
+Wire Wire Line
+	3400 3250 3400 3150
+Connection ~ 3400 3350
+Wire Wire Line
+	3400 3350 3400 3250
+Connection ~ 3400 3450
+Wire Wire Line
+	3400 3450 3400 3350
+Connection ~ 3400 3750
+Wire Wire Line
+	3400 3750 3400 3450
+Connection ~ 3400 3950
+Wire Wire Line
+	3400 3950 3400 3750
+Wire Wire Line
+	7500 1100 7500 1750
+Connection ~ 3400 1100
+Wire Wire Line
+	3400 1100 3400 900 
+Wire Wire Line
+	3400 1100 7500 1100
+$Comp
+L intel:8284 U?
+U 1 1 5F3711CE
+P 5500 3550
+F 0 "U?" H 5500 4631 50  0000 C CNN
+F 1 "8284" H 5500 4540 50  0000 C CNN
+F 2 "Housings_DIP:DIP-18_W7.62mm" H 5500 3550 50  0001 C CIN
+F 3 "http://www.cpu-galaxy.at/cpu/ram%20rom%20eprom/other_intel_chips/other_intel-Dateien/D8284A_Datasheet.pdf" H 5500 3550 50  0001 C CNN
+	1    5500 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R?
+U 1 1 5F3735DD
+P 6100 1800
+F 0 "R?" H 6170 1846 50  0000 L CNN
+F 1 "R" H 6170 1755 50  0000 L CNN
+F 2 "" V 6030 1800 50  0001 C CNN
+F 3 "" H 6100 1800 50  0001 C CNN
+	1    6100 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L device:CP1 C?
+U 1 1 5F37649E
+P 6100 1400
+F 0 "C?" V 5848 1400 50  0000 C CNN
+F 1 "CP1" V 5939 1400 50  0000 C CNN
+F 2 "" H 6100 1400 50  0001 C CNN
+F 3 "" H 6100 1400 50  0001 C CNN
+	1    6100 1400
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 5F3771BA
+P 6250 1800
+F 0 "#PWR?" H 6250 1550 50  0001 C CNN
+F 1 "GNDREF" H 6255 1627 50  0000 C CNN
+F 2 "" H 6250 1800 50  0001 C CNN
+F 3 "" H 6250 1800 50  0001 C CNN
+	1    6250 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:Crystal Y?
+U 1 1 5F377B69
+P 7300 3950
+F 0 "Y?" H 7300 4218 50  0000 C CNN
+F 1 "Crystal" H 7300 4127 50  0000 C CNN
+F 2 "" H 7300 3950 50  0001 C CNN
+F 3 "" H 7300 3950 50  0001 C CNN
+	1    7300 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 5F37A10C
+P 3400 900
+F 0 "#PWR?" H 3400 650 50  0001 C CNN
+F 1 "GNDREF" H 3405 727 50  0000 C CNN
+F 2 "" H 3400 900 50  0001 C CNN
+F 3 "" H 3400 900 50  0001 C CNN
+	1    3400 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 5F37A75B
+P 5500 4500
+F 0 "#PWR?" H 5500 4250 50  0001 C CNN
+F 1 "GNDREF" H 5505 4327 50  0000 C CNN
+F 2 "" H 5500 4500 50  0001 C CNN
+F 3 "" H 5500 4500 50  0001 C CNN
+	1    5500 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:CP1 C?
+U 1 1 5F37E210
+P 5850 2600
+AR Path="/5EB4E34E/5F37E210" Ref="C?"  Part="1" 
+AR Path="/5EA2FFA8/5F37E210" Ref="C?"  Part="1" 
+F 0 "C?" V 5598 2600 50  0000 C CNN
+F 1 "CP1" V 5689 2600 50  0000 C CNN
+F 2 "" H 5850 2600 50  0001 C CNN
+F 3 "" H 5850 2600 50  0001 C CNN
+	1    5850 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 5F37E216
+P 6250 2600
+AR Path="/5EB4E34E/5F37E216" Ref="#PWR?"  Part="1" 
+AR Path="/5EA2FFA8/5F37E216" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6250 2350 50  0001 C CNN
+F 1 "GNDREF" V 6255 2472 50  0000 R CNN
+F 2 "" H 6250 2600 50  0001 C CNN
+F 3 "" H 6250 2600 50  0001 C CNN
+	1    6250 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6250 2600 6000 2600
+$Comp
+L power:VCC #PWR?
+U 1 1 5F37E21E
+P 5150 2600
+AR Path="/5EB4E34E/5F37E21E" Ref="#PWR?"  Part="1" 
+AR Path="/5EA2FFA8/5F37E21E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5150 2450 50  0001 C CNN
+F 1 "VCC" H 5167 2773 50  0000 C CNN
+F 2 "" H 5150 2600 50  0001 C CNN
+F 3 "" H 5150 2600 50  0001 C CNN
+	1    5150 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 2950 7000 2950
+Wire Wire Line
+	5150 2600 5500 2600
+Wire Wire Line
+	5500 2650 5500 2600
+Connection ~ 5500 2600
+Wire Wire Line
+	5500 2600 5700 2600
+Text GLabel 7000 2950 2    50   Output ~ 0
+CLK
+Text GLabel 7000 3150 2    50   Output ~ 0
+READY
+Text GLabel 7000 3350 2    50   Output ~ 0
+RESET
+Text GLabel 7000 3550 2    50   Output ~ 0
+PCLK
+$EndSCHEMATC

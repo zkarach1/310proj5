@@ -1,0 +1,169 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 12
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	3550 2400 3250 2400
+Wire Wire Line
+	3550 2500 3250 2500
+Wire Wire Line
+	3550 2600 3250 2600
+Wire Wire Line
+	3550 2700 3250 2700
+Wire Wire Line
+	3550 2800 3250 2800
+Wire Wire Line
+	4550 2400 4850 2400
+Wire Wire Line
+	4550 2500 4850 2500
+Wire Wire Line
+	4550 2600 4850 2600
+Wire Wire Line
+	4550 2700 4850 2700
+Wire Wire Line
+	4550 2800 4850 2800
+NoConn ~ 4850 2400
+NoConn ~ 4850 2500
+NoConn ~ 4850 2600
+NoConn ~ 4850 2700
+NoConn ~ 4850 2800
+NoConn ~ 3250 2800
+NoConn ~ 3250 2700
+NoConn ~ 3250 2600
+NoConn ~ 3250 2500
+NoConn ~ 3250 2400
+Wire Wire Line
+	4050 1800 4650 1800
+Wire Wire Line
+	4650 1800 4650 1500
+Wire Wire Line
+	4050 1800 4050 1550
+$Comp
+L power:VCC #PWR?
+U 1 1 5EB3FB03
+P 4050 1550
+F 0 "#PWR?" H 4050 1400 50  0001 C CNN
+F 1 "VCC" H 4067 1723 50  0000 C CNN
+F 2 "" H 4050 1550 50  0001 C CNN
+F 3 "" H 4050 1550 50  0001 C CNN
+	1    4050 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 2300 1750 2300
+Wire Wire Line
+	3550 2200 1900 2200
+Wire Wire Line
+	3550 2100 2000 2100
+Wire Wire Line
+	4550 2300 5650 2300
+Wire Wire Line
+	4550 2200 5650 2200
+Wire Wire Line
+	4550 2100 5650 2100
+Entry Wire Line
+	5650 2100 5750 2000
+Entry Wire Line
+	5650 2200 5750 2100
+Entry Wire Line
+	5650 2300 5750 2200
+Wire Wire Line
+	3550 3000 2800 3000
+Wire Wire Line
+	2800 3000 2800 3100
+Wire Wire Line
+	3550 3100 2800 3100
+Connection ~ 2800 3100
+Wire Wire Line
+	2800 3100 2800 3350
+$Comp
+L Logic_74xx:74LS373 U?
+U 1 1 5F0199DD
+P 4050 2600
+F 0 "U?" H 4050 3581 50  0000 C CNN
+F 1 "74LS373" H 4050 3490 50  0000 C CNN
+F 2 "" H 4050 2600 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS373" H 4050 2600 50  0001 C CNN
+	1    4050 2600
+	1    0    0    -1  
+$EndComp
+Connection ~ 4050 1800
+Wire Wire Line
+	4650 1500 4950 1500
+$Comp
+L device:CP1 C?
+U 1 1 5F01DCE8
+P 5100 1500
+AR Path="/5EB4E34E/5F01DCE8" Ref="C?"  Part="1" 
+AR Path="/5EA2FFA8/5F01DCE8" Ref="C?"  Part="1" 
+AR Path="/5F018F24/5F01DCE8" Ref="C?"  Part="1" 
+F 0 "C?" V 4848 1500 50  0000 C CNN
+F 1 "CP1" V 4939 1500 50  0000 C CNN
+F 2 "" H 5100 1500 50  0001 C CNN
+F 3 "" H 5100 1500 50  0001 C CNN
+	1    5100 1500
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5500 1500 5250 1500
+$Comp
+L power:GNDREF #PWR?
+U 1 1 5F01E18C
+P 5500 1500
+F 0 "#PWR?" H 5500 1250 50  0001 C CNN
+F 1 "GNDREF" H 5505 1327 50  0000 C CNN
+F 2 "" H 5500 1500 50  0001 C CNN
+F 3 "" H 5500 1500 50  0001 C CNN
+	1    5500 1500
+	1    0    0    -1  
+$EndComp
+Text GLabel 2000 2100 0    50   Input ~ 0
+MIO
+Text GLabel 1900 2200 0    50   Input ~ 0
+RD
+Text GLabel 1750 2300 0    50   Input ~ 0
+WR
+Wire Bus Line
+	5750 1650 5750 2300
+Text GLabel 5750 1650 2    50   Output ~ 0
+CB[0:2]
+Text Label 5100 2100 0    50   ~ 0
+CB0
+Text Label 5100 2200 0    50   ~ 0
+CB1
+Text Label 5100 2300 0    50   ~ 0
+CB2
+$Comp
+L power:GNDREF #PWR?
+U 1 1 5F01F462
+P 2800 3350
+F 0 "#PWR?" H 2800 3100 50  0001 C CNN
+F 1 "GNDREF" H 2805 3177 50  0000 C CNN
+F 2 "" H 2800 3350 50  0001 C CNN
+F 3 "" H 2800 3350 50  0001 C CNN
+	1    2800 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR?
+U 1 1 5F01FEA0
+P 4050 3400
+F 0 "#PWR?" H 4050 3150 50  0001 C CNN
+F 1 "GNDREF" H 4055 3227 50  0000 C CNN
+F 2 "" H 4050 3400 50  0001 C CNN
+F 3 "" H 4050 3400 50  0001 C CNN
+	1    4050 3400
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

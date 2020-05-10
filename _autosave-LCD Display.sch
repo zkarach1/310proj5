@@ -1,0 +1,198 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 13 14
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Display_Character:NHD-0420H1Z U?
+U 1 1 5EDE27C1
+P 5900 3400
+F 0 "U?" H 5900 2511 50  0000 C CNN
+F 1 "NHD-0420H1Z" H 5900 2420 50  0000 C CNN
+F 2 "Display:NHD-0420H1Z" H 5900 2500 50  0001 C CNN
+F 3 "http://www.newhavendisplay.com/specs/NHD-0420H1Z-FSW-GBW-33V3.pdf" H 6000 3300 50  0001 C CNN
+	1    5900 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 3600 6600 3600
+Wire Wire Line
+	6300 3700 6600 3700
+NoConn ~ 6600 3600
+NoConn ~ 6600 3700
+Wire Wire Line
+	5500 3000 4650 3000
+Wire Wire Line
+	4500 3000 4500 2850
+Wire Wire Line
+	4500 2850 4100 2850
+Wire Wire Line
+	5500 2900 5000 2900
+Wire Wire Line
+	5500 2800 5000 2800
+Entry Wire Line
+	5000 2800 4900 2700
+Entry Wire Line
+	5000 2900 4900 2800
+Wire Wire Line
+	4650 3000 4650 2950
+Connection ~ 4650 3000
+Wire Wire Line
+	4650 3000 4500 3000
+$Comp
+L power:VCC #PWR?
+U 1 1 5EDE7048
+P 4650 2950
+F 0 "#PWR?" H 4650 2800 50  0001 C CNN
+F 1 "VCC" H 4667 3123 50  0000 C CNN
+F 2 "" H 4650 2950 50  0001 C CNN
+F 3 "" H 4650 2950 50  0001 C CNN
+	1    4650 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 3300 5000 3300
+Wire Wire Line
+	5500 3400 5000 3400
+Wire Wire Line
+	5500 3500 5000 3500
+Wire Wire Line
+	5500 3600 5000 3600
+Wire Wire Line
+	5500 3700 5000 3700
+Wire Wire Line
+	5500 3800 5000 3800
+Wire Wire Line
+	5500 3900 5000 3900
+Wire Wire Line
+	5500 4000 5000 4000
+Entry Wire Line
+	5000 3300 4900 3400
+Entry Wire Line
+	5000 3400 4900 3500
+Entry Wire Line
+	5000 3500 4900 3600
+Entry Wire Line
+	5000 3600 4900 3700
+Entry Wire Line
+	5000 3700 4900 3800
+Entry Wire Line
+	5000 3800 4900 3900
+Entry Wire Line
+	5000 3900 4900 4000
+Entry Wire Line
+	5000 4000 4900 4100
+Wire Wire Line
+	3900 2850 3800 2850
+$Comp
+L power:GNDREF #PWR?
+U 1 1 5EDEAD82
+P 3750 2850
+F 0 "#PWR?" H 3750 2600 50  0001 C CNN
+F 1 "GNDREF" V 3755 2722 50  0000 R CNN
+F 2 "" H 3750 2850 50  0001 C CNN
+F 3 "" H 3750 2850 50  0001 C CNN
+	1    3750 2850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5900 2600 5900 2500
+Wire Wire Line
+	7800 2500 7800 2750
+Wire Wire Line
+	5900 2500 7550 2500
+Wire Wire Line
+	5900 4200 7550 4200
+Wire Wire Line
+	7550 4200 7550 2950
+Connection ~ 7550 2500
+Wire Wire Line
+	7550 2500 7800 2500
+$Comp
+L power:GNDREF #PWR?
+U 1 1 5EDEE687
+P 7800 2750
+F 0 "#PWR?" H 7800 2500 50  0001 C CNN
+F 1 "GNDREF" H 7805 2577 50  0000 C CNN
+F 2 "" H 7800 2750 50  0001 C CNN
+F 3 "" H 7800 2750 50  0001 C CNN
+	1    7800 2750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 2950 7200 2950
+Connection ~ 7550 2950
+Wire Wire Line
+	7550 2950 7550 2500
+Wire Wire Line
+	6850 2950 6700 2950
+$Comp
+L power:VCC #PWR?
+U 1 1 5EDF3BB5
+P 6700 2950
+F 0 "#PWR?" H 6700 2800 50  0001 C CNN
+F 1 "VCC" V 6718 3077 50  0000 L CNN
+F 2 "" H 6700 2950 50  0001 C CNN
+F 3 "" H 6700 2950 50  0001 C CNN
+	1    6700 2950
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6000 2600 7000 2600
+Wire Wire Line
+	7000 2600 7000 2800
+$Comp
+L device:CP1 C?
+U 1 1 5F7FE7E0
+P 3950 2850
+F 0 "C?" V 3698 2850 50  0000 C CNN
+F 1 "CP1" V 3789 2850 50  0000 C CNN
+F 2 "" H 3950 2850 50  0001 C CNN
+F 3 "" H 3950 2850 50  0001 C CNN
+	1    3950 2850
+	0    1    1    0   
+$EndComp
+Connection ~ 3800 2850
+Wire Wire Line
+	3800 2850 3750 2850
+$Comp
+L device:R R?
+U 1 1 5F80008A
+P 7000 2950
+F 0 "R?" V 6793 2950 50  0000 C CNN
+F 1 "R" V 6884 2950 50  0000 C CNN
+F 2 "" V 6930 2950 50  0001 C CNN
+F 3 "" H 7000 2950 50  0001 C CNN
+	1    7000 2950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7000 2800 7200 2800
+Wire Wire Line
+	7200 2800 7200 2950
+Wire Bus Line
+	4900 2600 4900 2850
+Wire Bus Line
+	4900 3300 4900 4150
+Connection ~ 7200 2950
+Wire Wire Line
+	7200 2950 7150 2950
+Text GLabel 4900 4150 0    50   Input ~ 0
+D[0:15]
+Text GLabel 4900 2600 0    50   Input ~ 0
+A[0:19]
+Text Label 5000 2800 0    50   ~ 0
+A1
+Text Label 5000 2900 0    50   ~ 0
+A2
+$EndSCHEMATC
